@@ -4,9 +4,9 @@
   "description": "проект сортировки на typescript",
   "main": "index.js",
   "scripts": {
-    "start:dev": "tsc -w",
-    "start:run": "nodemon ./build/index.js",
-    "start": "concurrently npm:start:*"
+    "dev": "tsc -w",
+    "run": "nodemon ./build/index.js",
+    "start": "concurrently npm:dev npm:run"
   },
   "keywords": [],
   "author": "",
