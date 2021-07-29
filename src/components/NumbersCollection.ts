@@ -20,8 +20,8 @@ export class NumbersCollection extends Sorter {
     this.data[rightIndex] = leftHand;
   }
 
-  print(): void {
-    console.log(this.data);
+  print(): string {
+    return JSON.stringify(this.data);
   }
 
 }
