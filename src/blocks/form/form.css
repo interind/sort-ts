@@ -1,0 +1,8 @@
+.form {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 500px;
+  min-width: 300px;
+}
