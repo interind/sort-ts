@@ -21,7 +21,7 @@ export class NumbersCollection extends Sorter {
   }
 
   print(): string {
-    return JSON.stringify(this.data);
+    return this.data.join(',');
   }
 
 }

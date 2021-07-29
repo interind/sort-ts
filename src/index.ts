@@ -7,6 +7,7 @@ const charactersCollection = new CharactersCollection(str);
 const linkedList = new LinkedList;
 const body: Element = document.body;
 const result: HTMLDivElement = document.createElement('div');
+result.classList.add('result');
 const form: HTMLFormElement = document.createElement('form');
 form.classList.add('form');
 const input: HTMLInputElement = document.createElement('input');
