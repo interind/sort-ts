@@ -18,7 +18,7 @@ input.name = 'input';
 input.type = 'text';
 input.autocomplete = 'off';
 input.maxLength = 100;
-input.pattern = '[1-9,]+';
+input.pattern = '[0-9,-]+';
 const button: HTMLButtonElement = document.createElement('button');
 button.classList.add('form__submit');
 button.type = 'submit';
