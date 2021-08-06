@@ -18,7 +18,7 @@ export class LinkedList extends Sorter {
     tail.next = node;
   }
 
-  get length(): number {
+  get lengthArr(): number {
     if (!this.head) {
       return 0;
     }

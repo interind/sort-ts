@@ -6,7 +6,7 @@ export class NumbersCollection extends Sorter {
     super();
   };
 
-  get length(): number {
+  get lengthArr(): number {
     return this.data.length;
   }
 
@@ -20,8 +20,8 @@ export class NumbersCollection extends Sorter {
     this.data[rightIndex] = leftHand;
   }
 
-  print(): string {
-    return this.data.join(',');
+  print(): void {
+    console.log(this.data.join(','));
   }
 
 }

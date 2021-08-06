@@ -2,15 +2,16 @@
   "name": "sort-ts",
   "version": "1.0.0",
   "description": "проект сортировки на typescript",
-  "main": "index.ts",
   "scripts": {
-    "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "start:build": "tsc -w",
+    "start:run": "nodemon ./src/index.ts",
+    "start": "concurrently npm:start:*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "parcel": "2.0.0-rc.0"
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
   }
 }

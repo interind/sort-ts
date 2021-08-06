@@ -5,7 +5,7 @@ export class CharactersCollection extends Sorter {
     super();
   };
 
-  get length(): number {
+  get lengthArr(): number {
     return this.data.length;
   }
 

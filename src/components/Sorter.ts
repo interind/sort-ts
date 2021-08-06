@@ -1,13 +1,13 @@
 export abstract class Sorter {
-  abstract length: number;
+  abstract lengthArr: number;
   abstract compare(leftIndex: number, rightIndex: number): boolean;
   abstract swap(leftIndex: number, rightIndex: number): void;
 
   sort(): void {
-    const { length } = this;
+    const { lengthArr } = this;
 
-    for (let i = 0; i < length; i++) {
-      for (let j = 0; j < length - 1; j++) {
+    for (let i = 0; i < lengthArr; i++) {
+      for (let j = 0; j < lengthArr - 1; j++) {
         if (this.compare(j, j + 1)) {
           this.swap(j, j + 1);
         }
